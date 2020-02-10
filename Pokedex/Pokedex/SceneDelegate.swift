@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             let window = UIWindow(windowScene: windowScene)
             let dashboard = DashboardViewController()
+            dashboard.viewModel = DashboardViewModel()
 
             let navigation = UINavigationController(rootViewController: dashboard)
             window.rootViewController = navigation

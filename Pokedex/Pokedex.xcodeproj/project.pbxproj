@@ -13,6 +13,9 @@
 		194A8D5523F0C2E00020AB4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194A8D5323F0C2E00020AB4F /* LaunchScreen.storyboard */; };
 		194A8D6123F1082A0020AB4F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A8D5F23F1082A0020AB4F /* DashboardViewController.swift */; };
 		194A8D6223F1082A0020AB4F /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194A8D6023F1082A0020AB4F /* DashboardViewController.xib */; };
+		194A8D6523F10E130020AB4F /* NamedAPIResourceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A8D6423F10E130020AB4F /* NamedAPIResourceList.swift */; };
+		194A8D6A23F1162B0020AB4F /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A8D6823F1162B0020AB4F /* DashboardTableViewCell.swift */; };
+		194A8D6B23F1162B0020AB4F /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194A8D6923F1162B0020AB4F /* DashboardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		194A8D5623F0C2E00020AB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		194A8D5F23F1082A0020AB4F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		194A8D6023F1082A0020AB4F /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		194A8D6423F10E130020AB4F /* NamedAPIResourceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedAPIResourceList.swift; sourceTree = "<group>"; };
+		194A8D6823F1162B0020AB4F /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		194A8D6923F1162B0020AB4F /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		194A8D4723F0C2DC0020AB4F /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				194A8D6323F10E010020AB4F /* Models */,
 				194A8D5C23F107220020AB4F /* ViewControllers */,
 				194A8D4823F0C2DC0020AB4F /* AppDelegate.swift */,
 				194A8D4A23F0C2DC0020AB4F /* SceneDelegate.swift */,
@@ -69,10 +76,28 @@
 		194A8D5C23F107220020AB4F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				194A8D5F23F1082A0020AB4F /* DashboardViewController.swift */,
-				194A8D6023F1082A0020AB4F /* DashboardViewController.xib */,
+				194A8D6623F115F90020AB4F /* Dashboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		194A8D6323F10E010020AB4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				194A8D6423F10E130020AB4F /* NamedAPIResourceList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		194A8D6623F115F90020AB4F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				194A8D5F23F1082A0020AB4F /* DashboardViewController.swift */,
+				194A8D6023F1082A0020AB4F /* DashboardViewController.xib */,
+				194A8D6823F1162B0020AB4F /* DashboardTableViewCell.swift */,
+				194A8D6923F1162B0020AB4F /* DashboardTableViewCell.xib */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +160,7 @@
 			files = (
 				194A8D5523F0C2E00020AB4F /* LaunchScreen.storyboard in Resources */,
 				194A8D5223F0C2E00020AB4F /* Assets.xcassets in Resources */,
+				194A8D6B23F1162B0020AB4F /* DashboardTableViewCell.xib in Resources */,
 				194A8D6223F1082A0020AB4F /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194A8D6523F10E130020AB4F /* NamedAPIResourceList.swift in Sources */,
 				194A8D4923F0C2DC0020AB4F /* AppDelegate.swift in Sources */,
 				194A8D6123F1082A0020AB4F /* DashboardViewController.swift in Sources */,
 				194A8D4B23F0C2DC0020AB4F /* SceneDelegate.swift in Sources */,
+				194A8D6A23F1162B0020AB4F /* DashboardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
